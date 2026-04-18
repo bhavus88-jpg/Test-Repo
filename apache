@@ -13,3 +13,8 @@
         name: httpd
         state: started
         enabled: yes
+    - name: restart httpd service
+      ansible.builtin.service:
+        name: httpd
+        state: restart
+        enabled: yes
